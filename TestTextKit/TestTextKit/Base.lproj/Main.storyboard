@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nL9-Wh-0yG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nL9-Wh-0yG">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -124,9 +125,26 @@
                     <view key="view" contentMode="scaleToFill" id="gMF-DN-6mI">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ndw-0e-7fe">
+                                <rect key="frame" x="20" y="20" width="560" height="511"/>
+                                <color key="backgroundColor" red="1" green="0.72865060392056069" blue="0.4746740246186848" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ndw-0e-7fe" firstAttribute="top" secondItem="0ZP-I4-dqX" secondAttribute="bottom" id="9vh-Aq-9Zm"/>
+                            <constraint firstItem="b3k-1E-psc" firstAttribute="top" secondItem="ndw-0e-7fe" secondAttribute="bottom" constant="20" id="OYp-n8-lgz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ndw-0e-7fe" secondAttribute="trailing" id="kJJ-E2-z2d"/>
+                            <constraint firstItem="ndw-0e-7fe" firstAttribute="leading" secondItem="gMF-DN-6mI" secondAttribute="leadingMargin" id="oex-B7-UNe"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="s9w-WJ-st0"/>
+                    <connections>
+                        <outlet property="textView" destination="ndw-0e-7fe" id="jIv-um-NR2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ozg-WN-U67" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

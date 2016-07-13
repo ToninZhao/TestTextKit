@@ -20,6 +20,7 @@
 		325B81B91D3527E900AD3AAD /* VCFour.m in Sources */ = {isa = PBXBuildFile; fileRef = 325B81B81D3527E900AD3AAD /* VCFour.m */; };
 		325B81BC1D3527F300AD3AAD /* VCFive.m in Sources */ = {isa = PBXBuildFile; fileRef = 325B81BB1D3527F300AD3AAD /* VCFive.m */; };
 		325B81BF1D3529C000AD3AAD /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 325B81BE1D3529C000AD3AAD /* CircleView.m */; };
+		4D5A7E021D35CC76002334F9 /* HighlightTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A7E011D35CC76002334F9 /* HighlightTextStorage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		325B81BB1D3527F300AD3AAD /* VCFive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCFive.m; sourceTree = "<group>"; };
 		325B81BD1D3529C000AD3AAD /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
 		325B81BE1D3529C000AD3AAD /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
+		4D5A7E001D35CC76002334F9 /* HighlightTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighlightTextStorage.h; sourceTree = "<group>"; };
+		4D5A7E011D35CC76002334F9 /* HighlightTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighlightTextStorage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,8 @@
 				325B81B51D3527DD00AD3AAD /* VCThree.m */,
 				325B81B71D3527E900AD3AAD /* VCFour.h */,
 				325B81B81D3527E900AD3AAD /* VCFour.m */,
+				4D5A7E001D35CC76002334F9 /* HighlightTextStorage.h */,
+				4D5A7E011D35CC76002334F9 /* HighlightTextStorage.m */,
 				325B81BA1D3527F300AD3AAD /* VCFive.h */,
 				325B81BB1D3527F300AD3AAD /* VCFive.m */,
 				320521831D351C8B009BFD96 /* Main.storyboard */,
@@ -306,6 +311,7 @@
 				325B81B61D3527DD00AD3AAD /* VCThree.m in Sources */,
 				3205217F1D351C8B009BFD96 /* AppDelegate.m in Sources */,
 				3205217C1D351C8B009BFD96 /* main.m in Sources */,
+				4D5A7E021D35CC76002334F9 /* HighlightTextStorage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +455,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestTextKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.TestTextKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -460,6 +467,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestTextKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.TestTextKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
